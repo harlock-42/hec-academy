@@ -1,5 +1,4 @@
-psql -v --username "$POSTGRES_USER" --password "$POSTGRES_PASSWORD"
-    --dbname "$POSTGRES_DB"
+psql --username "$POSTGRES_USER"
 <<-EOSQL
     CREATE USER '$POSTGRES_USER';
     CREATE DATABASE $POSTGRES_DB;
